@@ -22,7 +22,7 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
 ### Getting Started
-
+ 
 To set up your python environment to run the code in this repository, follow the instructions below.
 
 1. Create (and activate) a new environment with Python 3.6.
@@ -55,14 +55,20 @@ To set up your python environment to run the code in this repository, follow the
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-4. Place the file in your local repository and unzip (or decompress) the file.  If you prefer not to copy the sim directly into your project, you can simply link to it.  
+    Note: all the code in the `communicator_objects` and `unityagents` folders contains the necessary files needed to run this Banana simulator.  I simply copied the required files from the [ml-agents](https://github.com/Unity-Technologies/ml-agents) repo for convenience.
+     
+4. Now place the file in your local repository and unzip (or decompress) the file.  If you prefer not to copy the sim directly into your project, you can simply link to it.  
     ```bash
     ln -s "path/to/unzipped/Banana/dir" .
     ```
 
 ### Instructions
 
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
+Now make sure you are in the DRL_Navigation top level folder and run,
+```bash
+jupyter notebook
+```
+This will open a web browser that display the contents of this project.  To get started with training your own agent, click on `Navigation.ipynb` and follow the instructions.   
 
 ### (Optional) Challenge: Learning from Pixels
 
